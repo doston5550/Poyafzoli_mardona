@@ -1,0 +1,36 @@
+POYAFZOLI MARDONA — CLOUDFLARE D1 ONLINE
+
+D1 database ва schema.sql тайёр бўлса, энди шу папкани Cloudflare Pages'га deploy қилинг.
+
+1. ZIP'ни очинг. GitHub repository'нинг ROOT қисмига БАРЧА файлларни юкланг.
+   ROOT'да index.html, functions/, wrangler.toml, schema.sql бўлиши керак.
+
+2. Cloudflare → Workers & Pages → Create application → Pages → Connect to Git.
+   GitHub repository'ни танланг.
+   Framework preset: None
+   Build command: бўш
+   Build output directory: .
+   Deploy.
+
+3. Pages project → Settings → Bindings.
+   Add → D1 database.
+   Variable name: DB
+   Database: сен яратган D1 database.
+   Save.
+
+4. Pages project → Settings → Variables and Secrets.
+   Production учун Secret қўшинг:
+   TELEGRAM_BOT_TOKEN = @BotFather берган bot token
+   Token'ни GitHub, index.html, app.js ёки db.js ичига ёзманг.
+
+5. Binding ва Secret қўшилгандан кейин қайта Deploy қилинг.
+
+6. BotFather → Bot Settings → Menu Button → Web App URL'га янги Pages URL'ни қўйинг.
+
+НАТИЖА:
+Telegram → Cloudflare Pages → Pages Functions API → Cloudflare D1
+
+Товарлар, савдолар, қолдиқлар ва ҳисоботлар онлайн сақланади.
+Шу Telegram аккаунти билан бошқа телефондан кирсангиз ҳам маълумотлар кўринади.
+
+Эслатма: schema.sql'ни D1 Console'да бир марта ишга тушириш етарли.

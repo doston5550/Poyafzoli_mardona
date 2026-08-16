@@ -1,0 +1,8 @@
+name = "poyafzoli-mardona"
+compatibility_date = "2026-08-16"
+pages_build_output_dir = "."
+
+[[d1_databases]]
+binding = "DB"
+database_name = "shoe-store-db"
+database_id = "44225025-55a7-4cb5-8cb3-54849cc741a3"
