@@ -1001,6 +1001,3 @@ body.dark .sale-item.debt-sale {
   max-height: 55vh;
   overflow-y: auto;
 }
-body {
-    background: lime !important;
-}
